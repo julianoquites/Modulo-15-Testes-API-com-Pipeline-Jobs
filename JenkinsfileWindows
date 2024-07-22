@@ -15,10 +15,9 @@ pipeline {
             steps {
                 bat '''set NO_COLOR=1
 start'''
+bat 'cy:run'
             }
-            steps {
-                bat 'cy:run'
-            }
+
         }
     }
 }
