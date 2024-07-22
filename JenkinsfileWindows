@@ -13,8 +13,8 @@ pipeline {
         }
         stage('Executar Testes') {
             steps {
-                bat 'set NO_COLOR=1
-start'
+                bat '''set NO_COLOR=1
+start'''
             }
             steps {
                 bat 'cy:run'
