@@ -11,11 +11,15 @@ pipeline {
                 bat 'npm install'
             }
         }
+        stage('Subir servidor') {
+            steps {
+                bat 'npm start'
+            }
+        }
         stage('Executar Testes') {
             steps {
                 bat '''set NO_COLOR=1
-npx serverest'''
-bat '''npx cypress run'''
+npx cypress run'''
             }
 
         }
