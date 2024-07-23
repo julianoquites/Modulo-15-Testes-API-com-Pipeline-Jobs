@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Subir servidor') {
             steps {
-                bat 'npm run ci'
+                bat 'npx serverest@latest'
             }
         }
         stage('Executar Testes') {
