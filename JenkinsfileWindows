@@ -11,17 +11,10 @@ pipeline {
                 bat 'npm install'
             }
         }
-        stage('Subir servidor') {
+        stage('Subir servidor e executar testes') {
             steps {
-                bat 'npm run ci'
+                bat '''set NO_COLOR=1 npm run ci'''
             }
-        }
-        stage('Executar Testes') {
-            steps {
-                bat '''set NO_COLOR=1
-npx cypress run'''
-            }
-
         }
     }
 }
