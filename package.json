@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run",
-    "start": "npx serverest",
     "start-server": "npm start",
-    "ci": "npm run start-server"
+    "test": "npx cypress run",
+    "ci": "start-server-and-test start-server http://localhost:3000 test",
+    "start": "npx serverest"
   },
   "keywords": [],
   "author": "",
