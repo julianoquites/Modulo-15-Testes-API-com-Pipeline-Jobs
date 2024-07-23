@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Subir servidor e executar testes') {
             steps {
-                bat '''set NO_COLOR=1 npm run ci'''
+                bat 'npm run ci'
             }
         }
     }
