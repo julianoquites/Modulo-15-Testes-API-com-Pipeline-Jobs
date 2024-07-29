@@ -1,6 +1,3 @@
-# Módulo 15 - Jenkins
-### Exercício para os alunos de Qualidade de software da EBAC
-
 ## Pré-requisito:
 
 ### Criar pasta 'npm'
